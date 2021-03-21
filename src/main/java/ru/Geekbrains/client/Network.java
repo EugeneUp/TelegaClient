@@ -72,7 +72,7 @@ public class Network {
                         callOnMsgReceived.callback(msg);
                     }
                 } catch (IOException e) {
-                    callOnException.callback("Соединение с сервером разорвано");
+                    callOnException.callback("Connection is out");
                 } finally {
                     closeConnection();
                 }
