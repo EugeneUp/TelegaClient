@@ -1,19 +1,7 @@
-buildscript {
-    repositories {
-        maven {
-            url "https://plugins.gradle.org/m2/"
-        }
-    }
-    dependencies {
-        classpath "it.gianluz:gradle-capsule-plugin:1.0.3"
-    }
-}
-
 plugins {
     id 'java'
     id 'application'
     id 'org.openjfx.javafxplugin' version '0.0.9'
-    id "it.gianluz.capsule" version "1.0.3"
 }
 
 group 'ru.Geekbrains.client'
@@ -30,12 +18,6 @@ dependencies {
 
 test {
     useJUnitPlatform()
-}
-
-jar {
-        manifest {
-            attributes 'Main-Class': 'ru.Geekbrains.client.Main'
-        }
 }
 
 javafx {
