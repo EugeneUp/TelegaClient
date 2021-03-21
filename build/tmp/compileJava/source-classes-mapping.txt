@@ -1,0 +1,8 @@
+ru/Geekbrains/client/Controller.java
+ ru.Geekbrains.client.Controller
+ru/Geekbrains/client/Network.java
+ ru.Geekbrains.client.Network
+ru/Geekbrains/client/Main.java
+ ru.Geekbrains.client.Main
+ru/Geekbrains/client/Callback.java
+ ru.Geekbrains.client.Callback
