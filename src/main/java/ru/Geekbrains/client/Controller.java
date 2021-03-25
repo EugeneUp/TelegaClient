@@ -38,6 +38,9 @@ public class Controller implements Initializable {
         clientsList.setManaged(authenticated);
         if (!authenticated) {
             nickname = "";
+        } else {
+            String history = ChatArchiver.displayLastMessages();
+            textArea.appendText(history);
         }
     }
 
@@ -63,6 +66,7 @@ public class Controller implements Initializable {
 
     public void sendMsg() {
         if (Network.sendMsg(msgField.getText())) {
+            ChatArchiver.archiveMessage(nickname, msgField.getText());
             msgField.clear();
             msgField.requestFocus();
         }
